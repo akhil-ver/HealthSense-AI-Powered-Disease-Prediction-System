@@ -37,7 +37,7 @@ HealthSense AI is a state-of-the-art, full-stack clinical intelligence platform.
 ### 2. Environment Configuration
 1. Create a `.env` file in the **root** folder:
    ```env
-   GEMINI_API_KEY=your_google_gemini_api_key_here
+   
    ```
 
 ### 3. Quick Start (Concurrently)
