@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass {
+    @apply bg-white bg-opacity-70 backdrop-blur-xl border border-white border-opacity-40 shadow-xl transition-all duration-300;
+  }
+  .glass-dark {
+    @apply bg-slate-900 bg-opacity-70 backdrop-blur-xl border border-slate-700 border-opacity-50 shadow-2xl transition-all duration-300;
+  }
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-cyan-400 dark:via-blue-500 dark:to-purple-500;
+  }
+  .card-gradient {
+    @apply bg-gradient-to-br from-white to-slate-50 border border-slate-100 shadow-sm rounded-2xl;
+  }
+  
+  /* 3D Effects */
+  .hover-3d {
+    @apply transition-transform duration-300 ease-out;
+    transform-style: preserve-3d;
+  }
+  .hover-3d:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-2deg) scale(1.02);
+    @apply shadow-[0_20px_50px_rgba(8,_112,_184,_0.15)] dark:shadow-[0_20px_50px_rgba(59,_130,_246,_0.25)];
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply bg-slate-50 text-slate-900 antialiased;
+}

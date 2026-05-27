@@ -1,0 +1,14 @@
+{
+  "name": "healthsense-ai-root",
+  "version": "1.0.0",
+  "description": "Root project to run frontend and backend together",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npm run dev",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
